@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsero Professional and Research Services</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">Sam<span>sero</span></div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Transform Your Academic Journey</h1>
+            <p>Samsero helps students manage their research and assignment projects effectively, allowing you to be the project manager of your academic success.</p>
+            <a href="#contact" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services">
+                <div class="service-card">
+                    <div class="service-card-content">
+                        <h3>Research Management</h3>
+                        <p>We help you organize, plan, and execute your research projects efficiently. Our expert team guides you through the research process, making complex academic tasks manageable.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-content">
+                        <h3>Assignment Planning</h3>
+                        <p>From brainstorming to final submission, we provide comprehensive support for your assignments. You maintain control as the project manager while we handle the heavy lifting.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-content">
+                        <h3>Time Management Solutions</h3>
+                        <p>For busy students juggling multiple responsibilities, our time management solutions ensure you meet your academic deadlines without sacrificing quality or your wellbeing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="section pricing">
+        <div class="container">
+            <h2 class="section-title">Our Pricing</h2>
+            <div class="price-cards">
+                <div class="price-card">
+                    <div class="price-header">
+                        <h3>Humanities</h3>
+                        <div class="price">$90</div>
+                        <p>per project</p>
+                    </div>
+                    <ul class="price-features">
+                        <li>Literature reviews</li>
+                        <li>Historical analysis</li>
+                        <li>Philosophy papers</li>
+                        <li>Creative writing support</li>
+                        <li>Cultural studies</li>
+                        <li>2 revision rounds</li>
+                    </ul>
+                    <div style="padding: 1rem;">
+                        <a href="#contact" class="btn">Get Started</a>
+                    </div>
+                </div>
+                <div class="price-card">
+                    <div class="price-header">
+                        <h3>Natural Sciences</h3>
+                        <div class="price">$100</div>
+                        <p>per project</p>
+                    </div>
+                    <ul class="price-features">
+                        <li>Lab reports</li>
+                        <li>Data analysis</li>
+                        <li>Research design</li>
+                        <li>Scientific literature review</li>
+                        <li>Experiment planning</li>
+                        <li>3 revision rounds</li>
+                    </ul>
+                    <div style="padding: 1rem;">
+                        <a href="#contact" class="btn">Get Started</a>
+                    </div>
+                </div>
+                <div class="price-card">
+                    <div class="price-header">
+                        <h3>Dissertation Projects</h3>
+                        <div class="price">$120</div>
+                        <p>per chapter</p>
+                    </div>
+                    <ul class="price-features">
+                        <li>Topic refinement</li>
+                        <li>Literature review support</li>
+                        <li>Methodology development</li>
+                        <li>Data analysis guidance</li>
+                        <li>Chapter-wise support</li>
+                        <li>Up to 2 major revisions per chapter</li>
+                    </ul>
+                    <div style="padding: 1rem;">
+                        <a href="#contact" class="btn">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="section">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <h3>Consultation</h3>
+                    <p>We start with a detailed discussion about your project requirements, timeline, and academic goals.</p>
+                </div>
+                <div class="step">
+                    <h3>Planning</h3>
+                    <p>Together, we develop a comprehensive project plan with clear milestones and deliverables.</p>
+                </div>
+                <div class="step">
+                    <h3>Execution</h3>
+                    <p>Our team works on your project while keeping you involved as the project manager.</p>
+                </div>
+                <div class="step">
+                    <h3>Review & Delivery</h3>
+                    <p>You review the work, request revisions if needed, and receive the final deliverable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <form id="contact-form" style="max-width: 600px; margin: 0 auto;">
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="name" style="display: block; margin-bottom: 0.5rem;">Name</label>
+                    <input type="text" id="name" name="name" required style="width: 100%; padding: 0.8rem; border: 1px solid #e2e8f0; border-radius: 4px;">
+                </div>
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="email" style="display: block; margin-bottom: 0.5rem;">Email</label>
+                    <input type="email" id="email" name="email" required style="width: 100%; padding: 0.8rem; border: 1px solid #e2e8f0; border-radius: 4px;">
+                </div>
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="subject" style="display: block; margin-bottom: 0.5rem;">Subject</label>
+                    <select id="subject" name="subject" required style="width: 100%; padding: 0.8rem; border: 1px solid #e2e8f0; border-radius: 4px;">
+                        <option value="">Select a subject area</option>
+                        <option value="humanities">Humanities</option>
+                        <option value="natural-sciences">Natural Sciences</option>
+                        <option value="dissertation-projects">Dissertation Projects</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="deadline" style="display: block; margin-bottom: 0.5rem;">Scheduled Deadline</label>
+                    <input type="date" id="deadline" name="deadline" required style="width: 100%; padding: 0.8rem; border: 1px solid #e2e8f0; border-radius: 4px;">
+                </div>
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="message" style="display: block; margin-bottom: 0.5rem;">Message</label>
+                    <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 0.8rem; border: 1px solid #e2e8f0; border-radius: 4px;"></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>Samsero Professional and Research Services is dedicated to helping students achieve academic excellence by providing comprehensive project management support.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>Email: info@samsero.com</li>
+                        <li>Phone: (123) 456-7890</li>
+                        <li>Address: 123 Academic Ave, Research City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Samsero Professional and Research Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

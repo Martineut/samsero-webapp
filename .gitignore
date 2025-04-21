@@ -1,0 +1,28 @@
+.env
+.env.*
+*.env
+
+# Python virtual environment
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+
+# Flask session files
+flask_session/
+
+# Logs
+logs/
+*.log
+
+# IDE specific files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS specific files
+.DS_Store
+Thumbs.db
